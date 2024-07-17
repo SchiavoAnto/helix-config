@@ -1,0 +1,48 @@
+theme = "melange"
+
+[editor]
+mouse = false
+middle-click-paste = false
+line-number = "relative"
+cursorline = true
+auto-format = false
+completion-replace = true
+true-color = true
+bufferline = "always"
+default-line-ending = "lf"
+insert-final-newline = true
+popup-border = "all"
+
+[editor.statusline]
+left = ["spinner", "mode", "file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["diagnostics", "version-control", "position"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+
+# Remappings
+
