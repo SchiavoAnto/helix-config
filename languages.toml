@@ -5,3 +5,14 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "c-sharp"
 indent = { tab-width = 4, unit = "    " }
+
+[language-server.superhtml-lsp]
+command = "superhtml"
+args = ["lsp"]
+
+[[language]]
+name = "html"
+scope = "source.html"
+roots = []
+file-types = ["html"]
+language-servers = [ "superhtml-lsp" ]

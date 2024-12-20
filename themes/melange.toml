@@ -24,7 +24,7 @@
 
 "ui.virtual.indent-guide" = { fg = "float"}
 "ui.virtual.inlay-hint" = { fg = "ui"}
-
+"ui.virtual.ruler" = { bg = "#4e4842" }
 
 
 "ui.statusline" = { fg = "fg", bg="sel" }

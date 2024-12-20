@@ -12,10 +12,11 @@ bufferline = "always"
 default-line-ending = "lf"
 insert-final-newline = true
 popup-border = "all"
+rulers = [80]
 
 [editor.statusline]
 left = ["spinner", "mode", "file-name", "read-only-indicator", "file-modification-indicator"]
-right = ["diagnostics", "version-control", "position"]
+right = ["file-line-ending", "diagnostics", "version-control", "position"]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
@@ -37,12 +38,26 @@ nbsp = "⍽"
 nnbsp = "␣"
 tab = "→"
 newline = "⏎"
-tabpad = "·"
+tabpad = " "
 
 [editor.indent-guides]
 render = true
 skip-levels = 1
 
-
 # Remappings
+[keys.normal]
+H = "goto_line_start"
+J = "goto_file_end"
+K = "goto_file_start"
+L = "goto_line_end"
 
+[keys.normal.d]
+s = "delete_selection"
+l = "kill_to_line_end"
+L = "kill_to_line_start"
+
+[keys.normal.b]
+c = ":buffer-close"
+n = "goto_next_buffer"
+p = "goto_previous_buffer"
+s = ":new"
